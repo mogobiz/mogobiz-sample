@@ -51,7 +51,7 @@ val swaggerV = "0.5.0"
 
 val metricsVersion = "3.1.0"
 
-val mogobizVersion = "0.2.22-SNAPSHOT"
+val mogobizVersion = "0.2.23-SNAPSHOT"
 
 libraryDependencies ++= Seq(
   "com.mogobiz" %% "mogobiz-auth" % mogobizVersion,
@@ -76,14 +76,16 @@ libraryDependencies ++= Seq(
   "org.scalikejdbc" %% "scalikejdbc-interpolation" % scalikeV,
   "org.scalikejdbc" %% "scalikejdbc-test" % scalikeV % "test",
   "com.typesafe.scala-logging" %% "scala-logging-slf4j" % "2.1.2",
-  "ch.qos.logback" % "logback-classic" % "1.1.2",
+  "ch.qos.logback" % "logback-classic" % "1.1.7",
+  "com.typesafe.scala-logging" %% "scala-logging" % "3.4.0",
   "com.itextpdf" % "itextpdf" % itextV,
   "com.itextpdf.tool" % "xmlworker" % itextV,
   "joda-time" % "joda-time" % "2.7",
   "org.joda" % "joda-convert" % "1.7",
-  "com.github.fernandospr" % "javapns-jdk16" % "2.2.1",
-  "org.scribe" % "scribe" % "1.3.6",
+  "com.github.fernandospr" % "javapns-jdk16" % "2.3.1",
+  "org.scribe" % "scribe" % "1.3.7",
   "com.typesafe" % "config" % configV,
+  //"mysql" % "mysql-connector-java" % "5.1.12",
   "com.h2database" % "h2" % "1.4.177" % "test",
   "com.jolbox" % "bonecp" % "0.8.0.RELEASE",
   "io.spray" %% "spray-can" % sprayV,
