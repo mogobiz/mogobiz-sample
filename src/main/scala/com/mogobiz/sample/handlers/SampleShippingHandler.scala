@@ -8,8 +8,6 @@ import com.mogobiz.pay.model.Mogopay.ShippingAddress
 
 import scala.collection.Seq
 
-/** Created by hayssams on 26/05/16.
-  */
 class SampleShippingHandler extends ShippingHandler {
   val SAMPLE_SHIPPING_PREFIX = "SAMPLE_SHIPPING_"
   val SAMPLE_SHIPPING_AMOUNT = 500 // in the smallest currency unit (for USD & EURO this amount is in cents)
