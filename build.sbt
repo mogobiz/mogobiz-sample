@@ -51,7 +51,7 @@ val swaggerV = "0.5.0"
 
 val metricsVersion = "3.1.0"
 
-val mogobizVersion = "0.2.24-SNAPSHOT"
+val mogobizVersion = "0.2.24.1-SNAPSHOT"
 
 libraryDependencies ++= Seq(
   "com.mogobiz" %% "mogobiz-auth" % mogobizVersion,

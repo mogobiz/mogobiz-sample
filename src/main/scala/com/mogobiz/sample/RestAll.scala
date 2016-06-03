@@ -8,7 +8,7 @@ import akka.actor.Props
 import akka.io.IO
 import spray.can.Http
 import com.mogobiz.run.config.MogobizRoutes
-import com.mogobiz.pay.config.{ MogopayRoutes }
+import com.mogobiz.pay.config.MogopayRoutes
 import com.mogobiz.system.{ ActorSystemLocator, BootedMogobizSystem, RoutedHttpService }
 
 object RestAll extends App with BootedMogobizSystem with MogobizRoutes with MogopayRoutes {
