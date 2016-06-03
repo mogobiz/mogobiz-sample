@@ -5,7 +5,7 @@ import com.mogobiz.run.config.DefaultMogobizCake
 import com.mogobiz.sample.handlers.MyCouponHandler
 
 class SampleCake extends DefaultMogobizCake {
-  override val easyPostHander = new EasyPostHandler
+  override val easyPostHandler = new EasyPostHandler
 
   override val couponHandler = new MyCouponHandler
 
