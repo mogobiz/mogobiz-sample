@@ -163,6 +163,14 @@ addCommandAlias("pl", ";clean;publishLocal")
 addCommandAlias("pr", ";clean;publish")
 
 
+Revolver.settings
+
+mainClass in Revolver.reStart := Some("com.mogobiz.sample.RestAll")
+
+// unmanagedClasspath in Runtime <<= (unmanagedClasspath in Runtime, baseDirectory) map { (cp, bd) => cp :+ Attributed.blank(bd / "conf") }
+
+javaOptions := Seq("-Xdebug", "-Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=5005", "-Xmx4G", "-XX:MaxPermSize=512m")
+
 scalariformSettings
 
 ScalariformKeys.preferences := ScalariformKeys.preferences.value
